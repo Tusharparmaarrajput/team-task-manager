@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Base axios instance pointing to our backend
 const API = axios.create({
-    baseURL: 'http://localhost:8000/api',
+    baseURL: 'https://team-task-manager-production-7067.up.railway.app/api',
 });
 
 // Attach JWT token to every request automatically
