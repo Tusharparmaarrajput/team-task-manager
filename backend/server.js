@@ -10,7 +10,12 @@ const taskRoutes = require('./routes/taskRoutes');
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(
+    cors({
+        origin: "https://team-task-manager-dusky-eight.vercel.app",
+        credentials: true,
+    })
+);
 app.use(express.json());
 
 // Routes
